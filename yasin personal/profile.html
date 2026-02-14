@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>photos</title>
+		<link rel="stylesheet" href="sthome.css">
+		<script type="text/javascript">
+			var image1=new Image();
+			image1.src="photos/img2.jpg";
+			var image2=new Image();
+			image2.src="photos/img8.jpg";
+			var image3=new Image();
+			image3.src="photos/img10.jpg";
+		</script>
+
+	</head>
+	<body>
+		<div class="nav_bar">
+			<ul type="none">
+				<li><a href="home_page.html">Home</a></li>
+				<li class="visited"><a href="profile.html">Profile</a></li>
+				<li><a href="favorite.html">My favourites</a></li>
+				<li><a href="contact_me.html">Contact me</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+			</ul>
+		</div>
+		<div id="imgslider">
+			<img src="images/14.jpg" class="pict2">
+			<p class="p1">Photos</p>
+		</div>
+		<div class="jm-item second">
+			<div class="jm-item-wrapper">
+				<div class="jm-item-image">
+					<img src="images/jem.jpg" alt="see all photos" name="slide" width="400" height="400">
+					<script type="text/javascript">
+						var step=1;
+						function slideit(){
+							document.images.slide.src=eval ("image"+step+".src");
+							if(step<3)
+								step++;
+							else
+								step=1;
+								setTimeout("slideit()",1500);
+						}
+						slideit();
+					</script>
+					<div class="jm-item-description">
+						<div class="jm-item-button"><a href="all photos.html">view all photo?</a></div>
+					</div>
+				</div>
+				<div class="jm-item-title">All photos are here</div>
+			</div>
+		</div>
+		<div class="socnet">
+				<a href="www.facebook.com"><img src="images/Flukle-icon.png"  id="facebook"></a>  
+				<a href="www.twiter.com"><img src="images/twitter-icon.png" id="twiter"></a>  
+				<a href="www.instagram.com"><img src="images/instagram-icon.png" id="instagram"></a>
+		</div>
+		<div id="profbox">
+			<img src="images/DW2.jpg">
+			
+		</div>
+		<div id="profpic">
+			<img src="images/jem.jpg">
+		</div>
+		<div id="footer">
+				copyright &copy; 2019 by yasin hussen. All Rights Reserved.
+		</div>			
+	</body>
+</html>

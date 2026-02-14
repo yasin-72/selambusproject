@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>feed back</title>
+		<link rel="stylesheet" href="sthome.css">
+		<script language="javascript" type="text/javascript">
+			function clearText(field){
+    			if (field.defaultValue == field.value) 
+    				field.value = '';
+    			else if (field.value == '') 
+    				field.value = field.defaultValue;
+			}
+		</script>
+	</head>
+	<body>
+				
+		<div class="nav_bar">
+			<ul type="none">
+				<li><a href="home_page.html">Home</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="favorite.html">My favourites</a></li>
+				<li><a href="contact_me.html">Contact me</a></li>
+				<li class="visited"><a href="feedback.html">Feedback</a></li>
+			</ul>
+		</div>
+		<div id="imgslider">
+				
+				<img src="images/14.jpg" class="pict2">
+				
+				
+		</div>
+		
+                 <div id="feeback_form">
+                 <form action="mailto:hussenyasin2824@gmial.com" method="POST">
+                    <p>Feed back form</p>
+                    <div id="namef">
+                    <label>Name:</label>&nbsp;&nbsp;&nbsp;<input type="text" value="Name..."  name="name" onfocus="clearText(this)" onblur="clearText(this)" />
+                	</div>
+                	<div id="emailf"">
+                	<label>Email:</label>&nbsp;&nbsp;&nbsp;<input type="text" value="Email..." name="email" onfocus="clearText(this)" onblur="clearText(this)" />
+                    </div>
+                    <div id="phonef">
+                    <label>Phone number:</label>&nbsp;&nbsp;&nbsp;<input type="text" value="phone number..." name="phone"  onfocus="clearText(this)" onblur="clearText(this)" />
+                    </div>
+                    <div id="feedback_textarea">                 
+                	<label>Message:</label><textarea name="Message"  cols="20" ></textarea>
+					</div>
+					<div id="buttonf">                 
+                		<input type="submit" value="send" name="send" src="images/read_more.gif">
+				</div>
+				</form>
+
+			</div>
+
+		<div id="footer">
+				copyright &copy; 2019 by yasin hussen. All Rights Reserved.
+		</div>
+	</body>
+</html>
